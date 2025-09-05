@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <Section className="py-20">
       <Container className="flex flex-col gap-20 md:gap-0 lg:gap-14 md:grid md:grid-cols-2 md:items-center">
-        <div className="flex flex-col gap-8">
+        <div className="flex items-start flex-col gap-8">
           <div className="flex flex-col gap-5">
             <Tag>about us</Tag>
 
@@ -20,10 +20,17 @@ const AboutMe = () => {
             Partner with leading home decor brands and visionary designers to
             transform your living spaces into works of art.
           </p>
+
+          <a
+            href="#"
+            className="text-black py-4 px-8 cursor-pointer rounded-full btn-border capitalize text-[1.2rem] font-bold lg:text-[1.3rem] smooth-trans mt-4"
+          >
+            read more
+          </a>
         </div>
 
         <div>
-          <img src="../images/about-us.png" alt="About us image" className="" />
+          <img src="../images/about-us.png" alt="About us image" />
         </div>
       </Container>
     </Section>
