@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 :root {
+  --color-grey-400: #9ca3af;
 }
 
 html {
