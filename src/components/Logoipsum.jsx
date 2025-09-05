@@ -6,7 +6,7 @@ import Why from "./Why.jsx";
 const Logoipsum = () => {
   return (
     <>
-      <div className="bg-image h-screen">
+      <div className="bg-image">
         <Header />
 
         <Hero />
