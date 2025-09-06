@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe.jsx";
 import Header from "./Header";
 import Hero from "./Hero.jsx";
+import Services from "./Services.jsx";
 import Why from "./Why.jsx";
 
 const Logoipsum = () => {
@@ -15,6 +16,8 @@ const Logoipsum = () => {
       <AboutMe />
 
       <Why />
+
+      <Services />
     </>
   );
 };
