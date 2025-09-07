@@ -80,7 +80,7 @@ body {
 }
 
 .footer-text {
-  background: url("../public/images/footer-bg-img.png") center/cover no-repeat;
+  background: url("../images/footer-bg-img.png") center/cover no-repeat;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
