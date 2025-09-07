@@ -3,6 +3,7 @@
 
 :root {
   --color-grey-400: #9ca3af;
+  --color-grey-300: #d1d5db;
 }
 
 html {
@@ -76,4 +77,14 @@ body {
 .btn-border:active {
   box-shadow: none;
   text-decoration: underline;
+}
+
+.footer-text {
+  background: url("../public/images/footer-bg-img.png") center/cover no-repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
 }

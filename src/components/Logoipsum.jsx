@@ -1,4 +1,5 @@
 import AboutMe from "./AboutMe.jsx";
+import Footer from "./Footer.jsx";
 import Header from "./Header";
 import Hero from "./Hero.jsx";
 import Services from "./Services.jsx";
@@ -18,6 +19,8 @@ const Logoipsum = () => {
       <Why />
 
       <Services />
+
+      <Footer />
     </>
   );
 };
