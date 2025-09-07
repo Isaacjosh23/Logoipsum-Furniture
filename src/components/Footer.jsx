@@ -15,13 +15,19 @@ const Footer = () => {
 
                 <ul className="text-[var(--color-grey-300)] text-xl flex flex-col gap-2.5">
                   <li>
-                    <a href="#">Courses</a>
+                    <a href="#" className="hover:underline">
+                      Courses
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Instructors</a>
+                    <a href="#" className="hover:underline">
+                      Instructors
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Community</a>
+                    <a href="#" className="hover:underline">
+                      Community
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -31,11 +37,20 @@ const Footer = () => {
 
                 <ul className="text-[var(--color-grey-300)] text-xl flex flex-col gap-2.5">
                   <li>
-                    <p>22 Rue de la Paix, Paris, France 75002</p>
+                    <a
+                      href="https://www.google.com/maps?q=22+Rue+de+la+Paix,+Paris,+France+75002"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      22 Rue de la Paix, Paris, France 75002
+                    </a>
                   </li>
 
                   <li>
-                    <a href="tel:+237 21891 3134">+237 21891 3134</a>
+                    <a href="tel:+237 21891 3134" className="hover:underline">
+                      +237 21891 3134
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -44,13 +59,13 @@ const Footer = () => {
                 <span className="inline-block font-semibold mb-4">Socials</span>
 
                 <ul className="text-[var(--color-grey-300)] text-xl flex flex-col gap-2.5">
-                  <li>
+                  <li className="hover:underline">
                     <a href="#">Instagram</a>
                   </li>
-                  <li>
+                  <li className="hover:underline">
                     <a href="#">X(FKA Twitter)</a>
                   </li>
-                  <li>
+                  <li className="hover:underline">
                     <a href="#">LinkedIn</a>
                   </li>
                 </ul>
@@ -61,13 +76,19 @@ const Footer = () => {
 
                 <ul className="text-[var(--color-grey-300)] text-xl flex flex-col gap-2.5">
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="#" className="hover:underline">
+                      Privacy Policy
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Cookies Policy</a>
+                    <a href="#" className="hover:underline">
+                      Cookies Policy
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Terms of Services</a>
+                    <a href="#" className="hover:underline">
+                      Terms of Services
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -77,7 +98,10 @@ const Footer = () => {
 
                 <ul className="text-[var(--color-grey-300)] text-xl flex flex-col gap-2.5">
                   <li className="break-words">
-                    <a href="mailto:info@pixelspark@yahoo.com">
+                    <a
+                      href="mailto:info@pixelspark@yahoo.com"
+                      className="hover:underline"
+                    >
                       info@pixelspark@yahoo.com
                     </a>
                   </li>
@@ -89,7 +113,10 @@ const Footer = () => {
 
                 <ul className="text-[var(--color-grey-300)] text-xl flex flex-col gap-2.5">
                   <li className="break-words">
-                    <a href="mailto:pixelspark@yahoo.com">
+                    <a
+                      href="mailto:pixelspark@yahoo.com"
+                      className="hover:underline"
+                    >
                       pixelspark@yahoo.com
                     </a>
                   </li>
