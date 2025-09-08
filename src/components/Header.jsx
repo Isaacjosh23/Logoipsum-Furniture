@@ -1,6 +1,7 @@
 import MobileNav from "./navigation/MobileNav";
 
 const Header = ({
+  onHomeClick,
   onAboutClick,
   onWhyUsClick,
   onServicesClick,
@@ -13,6 +14,7 @@ const Header = ({
       </div>
 
       <MobileNav
+        onHomeClick={onHomeClick}
         onAboutClick={onAboutClick}
         onWhyUsClick={onWhyUsClick}
         onServicesClick={onServicesClick}

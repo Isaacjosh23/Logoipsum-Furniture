@@ -1,10 +1,11 @@
 import Section from "./reusables/Section.jsx";
 import Container from "./reusables/Container.jsx";
 import Button from "./reusables/Button.jsx";
+import { forwardRef } from "react";
 
-const Hero = () => {
+const Hero = forwardRef((_, externalRef) => {
   return (
-    <Section className="py-20">
+    <Section ref={externalRef} className="py-20">
       <Container className="flex flex-col items-center gap-12 md:items-start">
         <div className="flex flex-col gap-6 text-center md:text-start md:w-[44rem] lg:w-[60rem]">
           <h1 className="text-4xl font-bold leading-[3.2rem] md:text-5xl md:leading-[3.8rem] lg:text-6xl lg:leading-[4.8rem]">
@@ -26,6 +27,6 @@ const Hero = () => {
       </Container>
     </Section>
   );
-};
+});
 
 export default Hero;

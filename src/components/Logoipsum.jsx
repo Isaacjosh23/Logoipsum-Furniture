@@ -7,6 +7,7 @@ import Services from "./Services.jsx";
 import Why from "./Why.jsx";
 
 const Logoipsum = () => {
+  const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const whyUsRef = useRef(null);
   const servicesRef = useRef(null);
@@ -20,13 +21,14 @@ const Logoipsum = () => {
     <>
       <div className="bg-image">
         <Header
+          onHomeClick={() => scrollToSection(homeRef)}
           onAboutClick={() => scrollToSection(aboutRef)}
           onWhyUsClick={() => scrollToSection(whyUsRef)}
           onServicesClick={() => scrollToSection(servicesRef)}
           onFooterClick={() => scrollToSection(footerRef)}
         />
 
-        <Hero />
+        <Hero ref={homeRef} />
       </div>
 
       <AboutMe ref={aboutRef} />

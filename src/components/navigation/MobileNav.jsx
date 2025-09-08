@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const MobileNav = ({
+  onHomeClick,
   onAboutClick,
   onWhyUsClick,
   onServicesClick,
@@ -26,12 +27,13 @@ const MobileNav = ({
   return (
     <>
       {navIsOpen && (
-        <nav className="main-nav absolute top-0 left-[40%] nav-position w-full h-screen invisible opacity-0 pointer-events-none bg-transparent z-[40] pt-24 nav-position">
+        <nav className="main-nav absolute flex justify-center top-0 left-[40%] nav-position w-full h-screen invisible opacity-0 pointer-events-none bg-transparent z-[40] pt-24 nav-position">
           <ul className="flex flex-col items-center h-screen">
             <li className="p-4">
               <a
                 href="#"
                 className="text-white text-[1.5rem] font-bold hover:underline smooth-trans"
+                onClick={(e) => handleNavClick(e, onHomeClick)}
               >
                 Home
               </a>
@@ -82,7 +84,7 @@ const MobileNav = ({
 
       {navIsOpen && (
         <div
-          className="absolute top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] z-[35] backdrop-blur-[3px]"
+          className=" fixed top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] z-[35] backdrop-blur-[3px]"
           onClick={handleOverlay}
         ></div>
       )}
