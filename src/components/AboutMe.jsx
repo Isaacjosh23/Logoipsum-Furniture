@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import Container from "./reusables/Container";
 import Section from "./reusables/Section";
 import Tag from "./reusables/Tag";
 
-const AboutMe = () => {
+const AboutMe = forwardRef((_, externalRef) => {
   return (
-    <Section className="py-20">
+    <Section ref={externalRef} className="py-20">
       <Container className="flex flex-col gap-20 md:gap-0 lg:gap-14 md:grid md:grid-cols-2 md:items-center">
         <div className="flex items-start flex-col gap-8">
           <div className="flex flex-col gap-5">
@@ -35,6 +36,6 @@ const AboutMe = () => {
       </Container>
     </Section>
   );
-};
+});
 
 export default AboutMe;

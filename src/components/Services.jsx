@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import Container from "./reusables/Container";
 import Section from "./reusables/Section";
 import Tag from "./reusables/Tag";
 
-const Services = () => {
+const Services = forwardRef((_, externalRef) => {
   return (
-    <Section className="py-20">
+    <Section ref={externalRef} className="py-20">
       <Container>
         <Tag className="mb-5 inline-block">services</Tag>
 
@@ -87,6 +88,6 @@ const Services = () => {
       </Container>
     </Section>
   );
-};
+});
 
 export default Services;

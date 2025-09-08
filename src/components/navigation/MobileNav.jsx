@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-const MobileNav = () => {
+const MobileNav = ({
+  onAboutClick,
+  onWhyUsClick,
+  onServicesClick,
+  onFooterClick,
+}) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   const handleToggleNav = () => {
@@ -10,6 +15,12 @@ const MobileNav = () => {
   const handleOverlay = () => {
     setNavIsOpen(false);
     console.log("clicked");
+  };
+
+  const handleNavClick = (e, callback) => {
+    e.preventDefault();
+    setNavIsOpen(false);
+    callback();
   };
 
   return (
@@ -30,6 +41,7 @@ const MobileNav = () => {
               <a
                 href="#"
                 className="text-white text-[1.5rem] font-bold hover:underline smooth-trans"
+                onClick={(e) => handleNavClick(e, onAboutClick)}
               >
                 About
               </a>
@@ -39,6 +51,7 @@ const MobileNav = () => {
               <a
                 href="#"
                 className="text-white text-[1.5rem] font-bold hover:underline smooth-trans"
+                onClick={(e) => handleNavClick(e, onWhyUsClick)}
               >
                 Why us
               </a>
@@ -48,6 +61,7 @@ const MobileNav = () => {
               <a
                 href="#"
                 className="text-white text-[1.5rem] font-bold hover:underline smooth-trans"
+                onClick={(e) => handleNavClick(e, onServicesClick)}
               >
                 Services
               </a>
@@ -57,6 +71,7 @@ const MobileNav = () => {
               <a
                 href="#"
                 className="text-white text-[1.5rem] font-bold hover:underline smooth-trans"
+                onClick={(e) => handleNavClick(e, onFooterClick)}
               >
                 Reach us
               </a>

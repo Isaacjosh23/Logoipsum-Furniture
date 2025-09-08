@@ -1,11 +1,12 @@
+import { forwardRef } from "react";
 import Container from "./reusables/Container";
 import Section from "./reusables/Section";
 
-const Footer = () => {
+const Footer = forwardRef((_, externalRef) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Section className="bg-black py-20">
+    <Section ref={externalRef} className="bg-black py-20">
       <Container>
         <div className="md:grid md:grid-cols-2 md:gap-x-24 lg:gap-x-32 md:mb-16 ">
           <div>
@@ -146,6 +147,6 @@ const Footer = () => {
       </Container>
     </Section>
   );
-};
+});
 
 export default Footer;

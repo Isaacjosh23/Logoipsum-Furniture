@@ -1,9 +1,13 @@
 import Section from "./reusables/Section.jsx";
 import Container from "./reusables/Container.jsx";
+import { forwardRef } from "react";
 
-const Why = () => {
+const Why = forwardRef((_, externalRef) => {
   return (
-    <Section className="bg-black py-20 bg-no-repeat bg-center bg-cover w-100% why-us-bg">
+    <Section
+      ref={externalRef}
+      className="bg-black py-20 bg-no-repeat bg-center bg-cover w-100% why-us-bg"
+    >
       <Container className="flex flex-col gap-12">
         <h3 className="capitalize text-3xl font-bold md:text-4xl">
           why work with us?
@@ -52,6 +56,6 @@ const Why = () => {
       </Container>
     </Section>
   );
-};
+});
 
 export default Why;
